@@ -1,0 +1,33 @@
+.active__false
+    &>.select_body
+        opacity: 0
+        visibility: hidden
+        transition: .5s
+    &>.select_span>img
+        transform: rotate(0deg)
+.active__true
+    &>.select_body
+        display: block
+        opacity: 1
+        visibility: visible
+        transition: .5s
+    &>.select_span>img
+        transform: rotate(180deg)
+
+.is-unvisible
+    opacity: 0
+    visibility: hidden
+    transition: .5s
+.is-visible
+    opacity: 1
+    visibility: visible
+    transition: .5s
+
+.is-hidden--animate
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    top: 0
+    left: 0
+    transition: .5s
+    transform: scale(.9)
